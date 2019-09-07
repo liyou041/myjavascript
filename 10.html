@@ -1,0 +1,41 @@
+<!doctype html> 
+<html> 
+<head> 
+    <meta charset="utf-8"> 
+    <title></title> 
+
+</head>
+<body>
+	<script type="text/javascript">
+		
+		//var a = '<iframe src="https://edu.51cto.com/center/course/lesson/index?id=439192"></iframe>';
+		//document.body.innerHTML = a;
+		/*
+		for(var i = 0;i < 6;i++){
+			document.body.innerHTML += a;
+		}
+		*/
+/*
+		
+			document.body.innerHTML += a;
+		},500)
+*/
+		var arr = ['https://edu.51cto.com/center/course/lesson/index?id=439192','https://edu.51cto.com/center/course/lesson/index?id=430926','https://edu.51cto.com/center/course/lesson/index?id=425397','https://edu.51cto.com/center/course/lesson/index?id=429828','https://edu.51cto.com/center/course/lesson/index?id=283215','https://edu.51cto.com/center/course/lesson/index?id=279961','https://edu.51cto.com/center/course/lesson/index?id=304323','https://edu.51cto.com/center/course/lesson/index?id=392190','https://edu.51cto.com/center/course/lesson/index?id=303718','https://edu.51cto.com/center/course/lesson/index?id=283497'],
+		num = 0;
+		ran();
+		function ran(){
+			setTimeout(x=>{
+				ran();
+				num++;
+				num == 10 && (num = 0,document.body.innerHTML = '');
+				var a = document.createElement('iframe');
+				a.src=arr[parseInt(Math.random()*arr.length)]
+				document.body.appendChild(a);
+			},1000+Math.random()*1000);
+		};
+		
+
+
+	</script>
+</body>
+</html>
